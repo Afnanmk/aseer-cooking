@@ -56,8 +56,9 @@
   </head>
   <body>
     <section class="bg-[#20003A]">
-      <div
-        class="tabs-container max-w-[1440px] mx-auto px-4 md:px-16 py-10 flex flex-col md:flex-row md:items-center gap-[4rem]"
+      
+        <div
+        class="tabs-container relative z-10 max-w-[1440px] mx-auto px-4 md:px-16 py-10 flex flex-col md:flex-row md:items-center gap-[4rem]"
       >
         <!-- Tabs -->
         <div
@@ -65,7 +66,7 @@
           id="tabs"
         >
           <button
-            class="tab tab-active text-right w-[17.5rem] bg-[#FFFFFF14] rounded-lg p-4 border border-[#D3D3D305] space-y-5 shrink-0 md:shrink"
+            class="tab tab-active text-right w-[17.5rem] md:w-auto bg-[#FFFFFF14] rounded-lg p-4 border border-[#D3D3D305] space-y-5 shrink-0 md:shrink"
             data-tab="tab1"
           >
             <p
@@ -80,7 +81,7 @@
             </p>
           </button>
           <button
-            class="tab text-right w-[17.5rem] bg-[#FFFFFF14] rounded-lg p-4 border border-[#D3D3D305] space-y-5 shrink-0 md:shrink"
+            class="tab text-right w-[17.5rem] md:w-auto bg-[#FFFFFF14] rounded-lg p-4 border border-[#D3D3D305] space-y-5 shrink-0 md:shrink"
             data-tab="tab2"
           >
             <p
@@ -95,7 +96,7 @@
             </p>
           </button>
           <button
-            class="tab text-right w-[17.5rem] bg-[#FFFFFF14] rounded-lg p-4 border border-[#D3D3D305] space-y-5 shrink-0 md:shrink"
+            class="tab text-right w-[17.5rem] md:w-auto bg-[#FFFFFF14] rounded-lg p-4 border border-[#D3D3D305] space-y-5 shrink-0 md:shrink"
             data-tab="tab3"
           >
             <p
@@ -110,7 +111,7 @@
             </p>
           </button>
           <button
-            class="tab text-right w-[17.5rem] bg-[#FFFFFF14] rounded-lg p-4 border border-[#D3D3D305] space-y-5 shrink-0 md:shrink"
+            class="tab text-right w-[17.5rem] md:w-auto bg-[#FFFFFF14] rounded-lg p-4 border border-[#D3D3D305] space-y-5 shrink-0 md:shrink"
             data-tab="tab4"
           >
             <p
@@ -274,26 +275,7 @@
         })
       })
 
-      //         function setEqualHeight() {
-      //     const tabs = document.querySelectorAll(".tab");
-
-      //     // Reset heights to auto to allow recalculation
-      //     tabs.forEach((tab) => (tab.style.height = "auto"));
-
-      //     // Find the maximum height
-      //     let maxHeight = 0;
-      //     tabs.forEach((tab) => {
-      //         const height = tab.offsetHeight;
-      //         if (height > maxHeight) maxHeight = height;
-      //     });
-
-      //     // Set all buttons to the maximum height
-      //     tabs.forEach((tab) => (tab.style.height = `${maxHeight}px`));
-      // }
-
-      // // Run the function on DOMContentLoaded and on window resize
-      // document.addEventListener("DOMContentLoaded", setEqualHeight);
-      // window.addEventListener("resize", setEqualHeight);
+      
     </script>
   </body>
 </html>
