@@ -7,6 +7,13 @@
 
 
     <style>
+      .tabs::before,
+.tabs::after {
+  content: "";
+  flex-shrink: 0;
+  width: 4px; /* Adjust space as needed */
+}
+
         .tab-active {
           background-color: #ffffff !important;
         }
@@ -34,7 +41,7 @@
     class="tabs-wrapper -mx-4 md:mx-0 overflow-x-scroll scrollbar-hidden scrollbar-none"
   >
     <div
-      class="tabs flex flex-row md:flex-col gap-[1.3125rem] md:flex-1 md:basis-[30%] md:shrink px-4"
+      class="tabs flex flex-row md:flex-col gap-[1.3125rem] md:flex-1 md:basis-[30%] md:shrink"
       id="tabs"
     >
       <button
